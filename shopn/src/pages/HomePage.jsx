@@ -9,27 +9,29 @@ import {
   Button
 } from "@material-ui/core";
 
-import { MenuIcon } from "@material-ui/icons";
+import MenuIcon from "@material-ui/icons/Menu";
 
 export class HomePage extends Component {
   render() {
     return (
       <Fragment>
-        <Container maxWidth="sm">
+        <div style={{ flexGrow: 1 }}>
           <AppBar position="static">
             <Toolbar>
-              <IconButton
+              {/* <IconButton
                 edge="start"
-                // className={classes.menuButton}
+                // style={{marginRight: }}
                 color="inherit"
                 aria-label="menu"
               >
                 <MenuIcon />
-              </IconButton>
-              <Typography variant="h6">News</Typography>
-              <Button color="inherit">Login</Button>
+              </IconButton> */}
+              <Typography variant="h6">Shopping Cart</Typography>
+              <Button color="inherit">Add a review</Button>
             </Toolbar>
           </AppBar>
+        </div>
+        <Container maxWidth="sm">
           <TextField
             id="outlined-full-width"
             // label="Search for a class!"
