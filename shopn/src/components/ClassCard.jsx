@@ -5,6 +5,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   card: {
@@ -37,7 +38,9 @@ export default function SimpleCard({ classCode, name }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">View Class</Button>
+        <Link to="/class/">
+          <Button size="small">View Class</Button>
+        </Link>
       </CardActions>
     </Card>
   );
