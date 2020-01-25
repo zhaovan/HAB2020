@@ -3,6 +3,8 @@ import { Container, TextField } from "@material-ui/core";
 import NavBar from "../components/ComponentBar";
 import GridComp from "../components/GridComp";
 
+import { db } from "../firebase";
+
 export class HomePage extends Component {
   render() {
     return (

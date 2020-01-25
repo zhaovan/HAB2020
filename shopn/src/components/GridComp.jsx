@@ -22,10 +22,18 @@ export default function CenteredGrid() {
     <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={6}>
-          <ClassCard className={classes.paper} />
+          <ClassCard
+            className={classes.paper}
+            classCode="1470"
+            name="Deep Learning"
+          />
         </Grid>
         <Grid item xs={6}>
-          <ClassCard className={classes.paper} />
+          <ClassCard
+            className={classes.paper}
+            classCode="1430"
+            name="Computer Vision"
+          />
         </Grid>
       </Grid>
     </div>
