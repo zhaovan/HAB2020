@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Container, TextField } from "@material-ui/core";
 import NavBar from "../components/ComponentBar";
+import GridComp from "../components/GridComp";
 
 export class HomePage extends Component {
   render() {
@@ -18,7 +19,9 @@ export class HomePage extends Component {
             InputLabelProps={{
               shrink: true
             }}
+            style={{ margin: "50px 0px" }}
           />
+          <GridComp />
         </Container>
       </Fragment>
     );
